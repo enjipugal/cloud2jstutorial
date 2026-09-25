@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SCRIPTLY</title>
+	
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♾</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="mobile-header">
+
+        <div class="mobile-logo">
+
+            <div class="logo-mark">
+                JS
+            </div>
+
+            <div>
+                <strong>SCRIPTLY</strong>
+                <span>LEARN JAVASCRIPT</span>
+            </div>
+
+        </div>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="brand">
+
+                <div class="logo-mark">
+                    JS
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>SCRIPTLY</strong>
+
+                    <span>
+                        JAVASCRIPT
+                        <i>101</i>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="system-status">
+
+                <span class="status-indicator"></span>
+
+                <div>
+
+                    <strong>LEARN JAVASCRIPT.</strong>
+
+                    <span>
+                        SIMPLY
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <nav class="navigation">
+
+            <a href="#home" class="navigation-item active">
+
+                <span class="nav-number">
+                    00
+                </span>
+
+                <span class="nav-name">
+                    Start Here
+                </span>
+
+                <span class="nav-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+            <a href="#variables" class="navigation-item">
+
+                <span class="nav-number">
+                    01
+                </span>
+
+                <span class="nav-name">
+                    Variables
+                </span>
+
+                <span class="nav-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+            <a href="#operators" class="navigation-item">
+
+                <span class="nav-number">
+                    02
+                </span>
+
+                <span class="nav-name">
+                    Operators
+                </span>
+
+                <span class="nav-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+            <a href="#conditions" class="navigation-item">
+
+                <span class="nav-number">
+                    03
+                </span>
+
+                <span class="nav-name">
+                    Conditions
+                </span>
+
+                <span class="nav-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+            <a href="#loops" class="navigation-item">
+
+                <span class="nav-number">
+                    04
+                </span>
+
+                <span class="nav-name">
+                    Loops
+                </span>
+
+                <span class="nav-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+            <a href="#functions" class="navigation-item">
+
+                <span class="nav-number">
+                    05
+                </span>
+
+                <span class="nav-name">
+                    Functions
+                </span>
+
+                <span class="nav-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+            <a
+                href="#compiler"
+                class="navigation-item compiler-nav"
+            >
+
+                <span class="nav-number">
+                    06
+                </span>
+
+                <span class="nav-name">
+                    Code Lab
+                </span>
+
+                <span class="nav-arrow">
+                    ↗
+                </span>
+
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <div class="progress-header">
+
+                <span>
+                    YOUR PROGRESS
+                </span>
+
+                <strong id="progressText">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress-track">
+
+                <div
+                    class="progress-bar"
+                    id="progressBar"
+                ></div>
+
+            </div>
+
+            <p>
+                Explore each lesson and
+                practice your code.
+            </p>
+
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <section
+            id="home"
+            class="hero section-target"
+        >
+
+            <div class="hero-inner">
+
+                <div class="hero-copy">
+
+                    <div class="terminal-label">
+
+                        <span class="terminal-dot"></span>
+
+                        <span>
+                            javascript@lab:~$
+                        </span>
+
+                        <span class="typing-text">
+                            start
+                        </span>
+
+                    </div>
+
+                    <h1>
+
+                        Learn JavaScript
+
+                        <span class="accent-text">
+                            differently.
+                        </span>
+
+                    </h1>
+
+                    <p class="hero-description">
+
+                        A visual and interactive beginner's
+                        guide to JavaScript. Learn the basics,
+                        understand the logic, and experiment
+                        directly in your browser.
+
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#variables"
+                            class="primary-button"
+                        >
+
+                            <span>
+                                BEGIN LESSON
+                            </span>
+
+                            <b>
+                                →
+                            </b>
+
+                        </a>
+
+
+                        <a
+                            href="#compiler"
+                            class="secondary-button"
+                        >
+
+                            OPEN CODE LAB
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-meta">
+
+                        <div>
+
+                            <strong>
+                                05
+                            </strong>
+
+                            <span>
+                                LESSONS
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                01
+                            </strong>
+
+                            <span>
+                                COMPILER
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                100%
+                            </strong>
+
+                            <span>
+                                BROWSER BASED
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="visual-grid"></div>
+
+                    <div class="floating-code code-top">
+
+                        <span class="code-line-number">
+                            01
+                        </span>
+
+                        <span>
+                            <em>const</em>
+                            language =
+                            <mark>"JS"</mark>;
+                        </span>
+
+                    </div>
+
+                    <div class="main-js-card">
+
+                        <div class="js-card-top">
+
+                            <span>
+                                /language
+                            </span>
+
+                            <span>
+                                01
+                            </span>
+
+                        </div>
+
+                        <div class="js-card-logo">
+                            JS
+                        </div>
+
+                        <div class="js-card-bottom">
+
+                            <span>
+                                JAVASCRIPT
+                            </span>
+
+                            <span>
+                                2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-code code-bottom">
+
+                        <span class="code-line-number">
+                            02
+                        </span>
+
+                        <span>
+                            console.<b>log</b>(
+                            <mark>"Hello"</mark>
+                            );
+                        </span>
+
+                    </div>
+
+                    <div class="floating-tag">
+
+                        <span></span>
+
+                        READY TO CODE
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+
+                <span>
+                    SCROLL TO EXPLORE
+                </span>
+
+                <div class="scroll-line">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="content-section section-target"
+        >
+
+            <div class="content-container">
+
+                <div class="section-heading">
+
+                    <div class="section-index">
+                        00
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            START HERE
+                        </span>
+
+                        <h2>
+                            What is JavaScript?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="intro-grid">
+
+                    <div class="intro-main">
+
+                        <p class="lead">
+
+                            JavaScript is a programming language
+                            that brings websites to life.
+
+                        </p>
+
+                        <p>
+
+                            It allows developers to create
+                            interactive elements, respond to
+                            user actions, manipulate content,
+                            process information, and build
+                            complete web applications.
+
+                        </p>
+
+                        <div class="code-terminal">
+
+                            <div class="terminal-bar">
+
+                                <div class="terminal-controls">
+
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+
+                                </div>
+
+                                <span>
+                                    hello.js
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+                            <div class="terminal-code">
+
+                                <span class="purple">
+                                    console
+                                </span>.
+
+                                <span class="blue">
+                                    log
+                                </span>(
+
+                                <span class="green-text">
+                                    "Hello, JavaScript!"
+                                </span>
+
+                                );
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="feature-stack">
+
+                        <div class="feature-card">
+
+                            <span class="feature-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    INTERACTIVE
+                                </strong>
+
+                                <p>
+                                    Respond to user actions.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="feature-card">
+
+                            <span class="feature-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    DYNAMIC
+                                </strong>
+
+                                <p>
+                                    Change content instantly.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="feature-card">
+
+                            <span class="feature-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    VERSATILE
+                                </strong>
+
+                                <p>
+                                    Build applications for the web.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            id="variables"
+            class="content-section dark-section section-target"
+        >
+
+            <div class="content-container">
+
+                <div class="section-heading">
+
+                    <div class="section-index">
+                        01
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            FUNDAMENTALS
+                        </span>
+
+                        <h2>
+                            Variables
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="lesson-grid">
+
+                    <div class="lesson-explanation">
+
+                        <div class="lesson-tag">
+                            CONCEPT
+                        </div>
+
+                        <p class="dark-lead">
+
+                            Think of a variable as
+                            a labeled container.
+
+                        </p>
+
+
+                        <p class="dark-description">
+
+                            Variables store information that
+                            your program can access and use.
+                            JavaScript commonly uses
+                            <code>let</code> and
+                            <code>const</code>.
+
+                        </p>
+
+                        <div class="variable-types">
+
+                            <div>
+
+                                <strong>
+                                    let
+                                </strong>
+
+                                <span>
+                                    Can be reassigned
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    const
+                                </strong>
+
+                                <span>
+                                    Cannot be reassigned
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="editor-window">
+
+                        <div class="editor-header">
+
+                            <div class="editor-file">
+
+                                <span class="file-dot"></span>
+
+                                variables.js
+
+                            </div>
+
+                            <span>
+                                JS
+                            </span>
+
+                        </div>
+
+                        <div class="editor-body">
+
+                            <div>
+                                <small>01</small>
+
+                                <span class="purple">
+                                    let
+                                </span>
+
+                                name =
+
+                                <span class="green-text">
+                                    "Ace"
+                                </span>;
+
+                            </div>
+
+                            <div>
+                                <small>02</small>
+
+                                <span class="purple">
+                                    let
+                                </span>
+
+                                age =
+
+                                <span class="orange">
+                                    27
+                                </span>;
+
+                            </div>
+
+                            <div>
+                                <small>03</small>
+
+                                <span class="purple">
+                                    const
+                                </span>
+
+                                language =
+
+                                <span class="green-text">
+                                    "JavaScript"
+                                </span>;
+
+                            </div>
+
+                            <div class="code-space"></div>
+
+                            <div>
+                                <small>05</small>
+
+                                console.
+
+                                <span class="blue">
+                                    log
+                                </span>(name);
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            id="operators"
+            class="content-section section-target"
+        >
+
+            <div class="content-container">
+
+                <div class="section-heading">
+
+                    <div class="section-index">
+                        02
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            CALCULATIONS
+                        </span>
+
+                        <h2>
+                            Operators
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="operator-grid">
+
+                    <div class="operator-card">
+
+                        <div class="operator-icon">
+                            +
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Addition
+                            </strong>
+
+                            <span>
+                                7 + 1 = 8
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="operator-card">
+
+                        <div class="operator-icon">
+                            −
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Subtraction
+                            </strong>
+
+                            <span>
+                                7 − 1 = 6
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="operator-card">
+
+                        <div class="operator-icon">
+                            ×
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Multiplication
+                            </strong>
+
+                            <span>
+                                7 × 1 = 7
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="operator-card">
+
+                        <div class="operator-icon">
+                            ÷
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Division
+                            </strong>
+
+                            <span>
+                                7 ÷ 1 = 7
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="calculation-box">
+
+                    <div class="calculation-code">
+
+                        <span class="purple">
+                            let
+                        </span>
+
+                        a =
+
+                        <span class="orange">
+                            7
+                        </span>;
+
+                        <br>
+
+                        <span class="purple">
+                            let
+                        </span>
+
+                        c =
+
+                        <span class="orange">
+                            1
+                        </span>;
+
+                        <br><br>
+
+                        <span class="purple">
+                            let
+                        </span>
+
+                        total = a + c;
+
+                    </div>
+
+
+                    <div class="calculation-result">
+
+                        <span>
+                            OUTPUT
+                        </span>
+
+                        <strong>
+                            8
+                        </strong>
+
+                        <small>
+                            a + c
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            id="conditions"
+            class="content-section light-green-section section-target"
+        >
+
+            <div class="content-container">
+
+                <div class="section-heading">
+
+                    <div class="section-index">
+                        03
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            DECISION MAKING
+                        </span>
+
+                        <h2>
+                            Conditions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="condition-grid">
+
+                    <div>
+
+                        <p class="lead">
+
+                            Give your program the ability
+                            to make decisions.
+
+                        </p>
+
+                        <p>
+
+                            An <code>if</code> statement checks
+                            whether a condition is true.
+                            If it is, JavaScript executes
+                            the code inside the statement.
+
+                        </p>
+
+                        <div class="decision-flow">
+
+                            <div class="flow-box">
+                                CONDITION
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                            <div class="flow-box green-box">
+                                TRUE
+                            </div>
+
+                            <span>
+                                →
+                            </span>
+
+                            <div class="flow-box">
+                                ACTION
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="editor-window light-editor">
+
+                        <div class="editor-header">
+
+                            <div class="editor-file">
+
+                                <span class="file-dot"></span>
+
+                                condition.js
+
+                            </div>
+
+                            <span>
+                                JS
+                            </span>
+
+                        </div>
+
+                        <div class="editor-body">
+
+                            <div>
+                                <small>01</small>
+
+                                <span class="purple">
+                                    let
+                                </span>
+
+                                age =
+
+                                <span class="orange">
+                                    27
+                                </span>;
+
+                            </div>
+
+
+                            <div>
+                                <small>02</small>
+
+                                <span class="purple">
+                                    if
+                                </span>
+
+                                (age &gt;=
+
+                                <span class="orange">
+                                    27
+                                </span>) {
+
+                            </div>
+
+
+                            <div>
+                                <small>03</small>
+
+                                &nbsp;&nbsp;
+
+                                console.
+
+                                <span class="blue">
+                                    log
+                                </span>(
+
+                            </div>
+
+
+                            <div>
+                                <small>04</small>
+
+                                &nbsp;&nbsp;
+
+                                <span class="green-text">
+                                    "Adult"
+                                </span>
+
+                            </div>
+
+
+                            <div>
+                                <small>05</small>
+
+                                }
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            id="loops"
+            class="content-section dark-section section-target"
+        >
+
+            <div class="content-container">
+
+                <div class="section-heading">
+
+                    <div class="section-index">
+                        04
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            REPETITION
+                        </span>
+
+                        <h2>
+                            Loops
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="loop-layout">
+
+                    <div>
+
+                        <div class="loop-badge">
+                            DON'T REPEAT YOURSELF
+                        </div>
+
+
+                        <p class="dark-lead">
+
+                            Let the computer
+                            do the repeating.
+
+                        </p>
+
+                        <p class="dark-description">
+
+                            A loop runs a block of code repeatedly
+                            until its condition is no longer true.
+
+                        </p>
+
+                    </div>
+
+                    <div class="loop-editor">
+
+                        <div class="loop-editor-top">
+
+                            <span>
+                                for-loop.js
+                            </span>
+
+                            <span>
+                                01 — 07
+                            </span>
+
+                        </div>
+
+
+                        <pre><span class="purple">for</span> (
+    <span class="purple">let</span> i = <span class="orange">7</span>;
+    i &lt;= <span class="orange">1</span>;
+    i++
+) {
+    console.<span class="blue">log</span>(i);
+}</pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            id="functions"
+            class="content-section section-target"
+        >
+
+            <div class="content-container">
+
+                <div class="section-heading">
+
+                    <div class="section-index">
+                        05
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            REUSABLE CODE
+                        </span>
+
+                        <h2>
+                            Functions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="function-grid">
+
+                    <div class="function-card">
+
+                        <span class="function-label">
+                            FUNCTION
+                        </span>
+
+                        <h3>
+                            greet()
+                        </h3>
+
+                        <p>
+
+                            A function is a reusable block
+                            of code designed to perform
+                            a specific task.
+
+                        </p>
+
+                        <div class="function-call">
+
+                            <span>
+                                CALL IT
+                            </span>
+
+                            <strong>
+                                greet("JS")
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="function-editor">
+
+                        <div class="editor-header">
+
+                            <div class="editor-file">
+
+                                <span class="file-dot"></span>
+
+                                functions.js
+
+                            </div>
+
+                            <span>
+                                JS
+                            </span>
+
+                        </div>
+
+                        <pre><span class="purple">function</span> <span class="blue">greet</span>(name) {
+
+    <span class="purple">return</span>
+        <span class="green-text">"Hello, "</span> + name;
+
+}
+
+console.<span class="blue">log</span>(
+    <span class="blue">greet</span>(
+        <span class="green-text">"JavaScript"</span>
+    )
+);</pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            id="compiler"
+            class="compiler-section section-target"
+        >
+
+            <div class="compiler-container">
+
+                <div class="compiler-heading">
+
+                    <div class="compiler-index">
+                        👨🏽‍💻
+                    </div>
+
+                    <div>
+
+                        <div class="live-label">
+
+                            <span></span>
+
+                            LIVE CODE LAB
+
+                        </div>
+
+                        <h2>
+                            Now, you code.
+                        </h2>
+
+                        <p>
+
+                            Experiment with JavaScript
+                            directly in your browser.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="compiler-window">
+
+                    <div class="compiler-window-top">
+
+                        <div class="window-left">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
+
+                        <span>
+                            JS//LAB — ONLINE COMPILER
+                        </span>
+
+                        <strong>
+                            ● ONLINE
+                        </strong>
+
+                    </div>
+
+                    <iframe
+                        src="https://onecompiler.com/embed/javascript"
+                        title="Online JavaScript Compiler"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+                <div class="challenge-box">
+
+                    <div class="challenge-number">
+                        ?
+                    </div>
+
+                    <div>
+
+                        <span>
+                            MINI CHALLENGE
+                        </span>
+
+                        <p>
+
+                            Create a variable containing
+                            your name and display it using
+                            <code>console.log()</code>.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="footer-container">
+
+                <div class="footer-logo">
+
+                    <div class="logo-mark">
+                        JS
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            SCRIPTLY
+                        </strong>
+
+                        <span>
+                            JAVASCRIPT 101
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    Learn. Experiment. Build.
+                </p>
+
+                <span class="footer-copy">
+                    © Ace Pugal '26. All rights reserved.
+                </span>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
